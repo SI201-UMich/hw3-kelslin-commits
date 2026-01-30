@@ -30,7 +30,7 @@ class CouponDispenser:
     def issue_coupon(self, name):
         name = name.strip()
         if not self.coupon_cards:
-            return "The box is empty"
+            return "The box is empty."
         
         if name in self.customer_roster:
             index_num = self.customer_roster.index(name)
@@ -48,7 +48,7 @@ class CouponDispenser:
         answer = ''
 
         while True:
-            feedback = ("Round " + str(round_number) + " - Enter a name (or a comma-seperated list), or type 'show' or 'exit': ")
+            feedback = ("Round " + str(round_number) + " - Enter a name (or a comma-separated list), or type 'show' or 'exit': ")
             answer = input(feedback)
 
             if answer == 'exit':
@@ -376,5 +376,5 @@ def test():
 
 if __name__ == "__main__":
     main()
-    # test()
+    test()
 
