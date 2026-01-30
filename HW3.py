@@ -7,7 +7,7 @@
 # Asked ChatGPT hints for debugging and suggesting the general structure of the code
 # Did your use of GenAI on this assignment align with your goals and guidelines in 
 #    your Gen AI contract? If not, why?
-# I used Gen AI for syntax help and correction for more efficiency, also asked for hints on debugging
+# I used Gen AI for syntax help and correction for more efficiency, also asked for hints on debugging, and how to push into github
 
 import random
 import io
@@ -94,7 +94,6 @@ def main():
         "Free extra espresso shot",
     ]
 
-    # Uncomment the lines below as you implement each function.
     box = CouponDispenser(coupon_cards)
     box.distribute_session()
     box.tally_distribution()
